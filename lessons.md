@@ -58,3 +58,26 @@ nav {
     @include style-link-text($color-text-light)
 }
 ```
+
+### Functions
+
+In-built functions
+There are built-in sass functions such as:
+darken() and lighten
+
+```
+background-color: darken($color-primary, 10%)
+```
+
+Custom functions
+
+```
+declaration
+@function divide($a, $b){
+    @return $a / $b
+}
+
+usage
+margin: divide(60, 12) * 1px;
+
+```
