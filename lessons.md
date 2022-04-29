@@ -26,3 +26,35 @@ Other preprocessor are less and stylus. Sass is the most popular one.
     /* usage */
     font-color: $color-text-dark
 ```
+
+### Mixin
+
+Declaration
+
+```
+@mixin clearfix {
+    &::after {
+        content:"";
+        clear: both;
+        display: table;
+    }
+}
+
+//Can take argument
+
+@mixin style-link-text($color){
+    text-decoration:none;
+    text-transform: uppercase;
+    color: $color;
+}
+```
+
+Usage or implementation
+
+```
+nav {
+    @include clearfix
+
+    @include style-link-text($color-text-light)
+}
+```
