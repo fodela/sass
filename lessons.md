@@ -106,3 +106,19 @@ It copies the selector to the placeholder content there by keep the code "DRY". 
     }
 }
 ```
+
+### Sass installation
+
+create package.json file (if not existing)
+install sass
+
+```
+npm init
+npm install node-sass --save-dev
+```
+
+How to reinstall all dependencies
+
+```
+npm install
+```
