@@ -122,3 +122,9 @@ How to reinstall all dependencies
 ```
 npm install
 ```
+
+How to uninstall sass
+
+```
+npm uninstall node-sass --save
+```
