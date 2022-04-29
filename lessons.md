@@ -81,3 +81,28 @@ usage
 margin: divide(60, 12) * 1px;
 
 ```
+
+# Extends
+
+We create a placeholder for every properties to prevent repetition.
+
+It copies the selector to the placeholder content there by keep the code "DRY". While mixins copies the code to where ever we include it.
+
+```
+/* declaration */
+%btn-placeholder{
+    padding:10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    width: $width-button;
+    @include style-link-text($color-text-light)
+}
+/* usage */
+.btn-main{
+    &:link{
+        @extend %btn-placeholder;
+        background-color: $color-secondary;
+    }
+}
+```
